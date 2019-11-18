@@ -3,11 +3,12 @@
   height: 30vh;
   width: 25vw;
   border: 3px black solid;
-  padding: 3%;
-  background-color: rgb(104, 125, 153);
+ 
 }
 .jumbotron {
-  background-image: linear-gradient(#ABB2B9, #D5F5E3 );
+  background-image: url("../images/circle-blues.png");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 #contact-card {
   background-color: ;
@@ -49,4 +50,7 @@
 font-size: 85%;
 }
 
+#parallax-1 {
+  height: 470px;
+}
 

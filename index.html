@@ -26,14 +26,14 @@
     <div class="navbar-fixed">
 
         <!--Navbar-->
-        <nav class="indigo">
+        <nav class="deep-purple darken-4">
             <div class="nav-wrapper">
                 <a href="#home" class="brand-logo center">Nivi Amanjee</a>
                 <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="#about-me"> About Me</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a class="email-me">Contact Me</a></li>
+                    <li><a href="html-pages/contact.html">Contact Me</a></li>
                 </ul>
             </div>
             <!--SideNav-->
@@ -63,6 +63,7 @@
         <header>
 
             <div class="jumbotron" style=" height: 100vh">
+
 
                 <div class="card" id="contact-card">
 
@@ -96,7 +97,7 @@
 
         <div class="section white scrollspy text-box" id="about-me" style="padding-top: 3rem;
         padding-bottom: 5rem">
-            <div class="row container" data-aos="fade-right">
+            <div class="row container" data-aos="fade-right" data-aos-duration="4000">
                 <h2 class="header">About Me</h2>
                 <div>
 
@@ -116,7 +117,7 @@
             </div>
         </div>
         <!--first parallax container-->
-        <div class="parallax-container">
+        <div class="parallax-container" id="parallax-1">
             <div class="parallax">
                 <img src="assets/images/arccampus.jpg">
 
@@ -125,7 +126,7 @@
 
         <div class=" section white scrollspy text-box" style="padding-top: 3rem;
         padding-bottom: 5rem">
-            <div class="row container" data-aos="fade-left">
+            <div class="row container" data-aos="fade-left" data-aos-duration="4000">
                 <h4> Hobbies and Interests</h4>
                 <p class="grey-text text-darken-3 lighten-3"> As I explore the avenues of my life, I also
                     explore myself
@@ -167,12 +168,12 @@
         <div class="section scrollspy text-box" style="padding-top: 3rem;
         padding-bottom: 5rem" id="projects">
             <div class="row container">
-                <h4 data-aos="fade-right"> My Projects </h4>
-                <div id="card-row" class="row">
+                <h4 data-aos="fade-right" data-aos-duration="4000"> My Projects </h4>
+                <div id="card-row" class="row" data-aos="fade-in" data-aos-duration="3000">
                     <div id="card-row-container" class="col s12 m4 d-flex justify-content-between">
                         <div class="card sticky-action">
                             <div class="card-image">
-                                <img src="assets/images/Concertimg1.jpg">
+                                <img src="../Nivi-Amanjee-Portfolio/assets/images/newgirlnotitlepic.jpg">
                             </div>
                             <div class="card-content">
                                 <span class="card-title"> Trivia Game</span>
@@ -180,30 +181,48 @@
                                         class="material-icons right">more_vert</i></span>
                             </div>
                             <div class="card-action">
-                                <a href=""> View Project </a>
+                                <a href="https://niviamanjee.github.io/TriviaGame/" target="_blank"> View Project </a>
                             </div>
                             <div class="card-reveal">
                                 <span class="card-title grey-text text-darken-4">New Girl Trivia Game<i
                                         class="material-icons right">close</i></span>
+                                <span class="project-description"> This Trivia Game will test your knowledge on the
+                                    popular comedy show New Girl. Try to answer the questions quickly, or you might run
+                                    out of time! </span>
+                                <br><br>
+                                <span class="links-to-GH"><i class="fab fa-github"></i><a
+                                        href="https://github.com/niviamanjee/TriviaGame" target="_blank">Github
+                                        Repository</a></span>
                             </div>
                         </div>
                         <div class="card sticky-action">
                             <div class="card-image">
-                                <img src="assets/images/Concertimg1.jpg">
+                                <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe
+                                        src="https://giphy.com/embed/l41lI4bYmcsPJX9Go" width="100%" height="100%"
+                                        style="position:absolute" frameBorder="0" class="giphy-embed"
+                                        allowFullScreen></iframe></div>
+                                <p><a
+                                        href="https://giphy.com/gifs/rickandmorty-adult-swim-rick-and-morty-l41lI4bYmcsPJX9Go"></a>
+                                </p>
                             </div>
                             <div class="card-content">
                                 <span class="card-title"> Giftastic</span>
                                 <span class="card-title activator grey-text text-darken-4"><i
                                         class="material-icons right">more_vert</i></span>
-                                <span id="Location"></span>
-                                <span id="date"></span>
+
                             </div>
                             <div class="card-action">
-                                <a href="#"> View Project </a>
+                                <a href="https://niviamanjee.github.io/GifTastic/" target="_blank"> View Project </a>
                             </div>
                             <div class="card-reveal">
                                 <span class="card-title grey-text text-darken-4">Giftastic: Cartoon Gif Search<i
                                         class="material-icons right">close</i></span>
+                                <span class="project-description"> Search your favorite cartoon and receive gifs related
+                                    to your search! You can save your cartoons into your local storage. </span>
+                                <br><br>
+                                <span class="links-to-GH"><i class="fab fa-github"></i><a
+                                        href="https://github.com/niviamanjee/GifTastic" target="_blank">Github
+                                        Repository</a></span>
                             </div>
                         </div>
                         <div class="card sticky-action">
@@ -216,36 +235,52 @@
                                         class="material-icons right">more_vert</i></span>
                             </div>
                             <div class="card-action">
-                                <a href=""> View Project </a>
+                                <a href="https://niviamanjee.github.io/Music-Hack/"> View Project </a>
                             </div>
                             <div class="card-reveal">
                                 <span class="card-title grey-text text-darken-4">Music Hack: Concert Search App<i
                                         class="material-icons right">close</i></span>
+                                <span class="project-description"> A dynamic concert search app that allows users to
+                                    receive information related to their favorite artists' concerts, trending articles,
+                                    and merchandise, providing a versatile concert planning experience in one search.
+                                </span>
+                                <br><br>
+                                <span class="links-to-GH"><i class="fab fa-github"></i><a
+                                        href="https://github.com/wparks08/project-1" target="_blank">Github
+                                        Repository</a></span>
                             </div>
                         </div>
                         <div class="card sticky-action">
                             <div class="card-image">
-                                <img src="assets/images/Concertimg1.jpg">
+                                <img src="assets/images/wordguessgameportfolioimage.jpg">
                             </div>
                             <div class="card-content">
-                                <span class="card-title"> Word Guess Game</span>
+                                <span class="card-title"> Horror Movie Guess</span>
                                 <span class="card-title activator grey-text text-darken-4"><i
                                         class="material-icons right">more_vert</i></span>
-                                <span id="Location"></span>
-                                <span id="date"></span>
+
                             </div>
                             <div class="card-action">
 
-                                <a href="#"> View Project </a>
+                                <a href="https://niviamanjee.github.io/Word-Guess-Game/" target="_blank"> View Project
+                                </a>
                             </div>
                             <div class="card-reveal">
                                 <span class="card-title grey-text text-darken-4">Horror Movie Guess Game<i
                                         class="material-icons right">close</i></span>
+                                <span class="project-description"> In this fun, interactive, you have to try to guess
+                                    popular horror movie names. This project uses Javascript for its logic and HTML and
+                                    Bootstrap CSS for styling.
+                                </span>
+                                <br><br>
+                                <span class="links-to-GH"><i class="fab fa-github"></i><a
+                                        href="https://github.com/niviamanjee/Word-Guess-Game" target="_blank">Github
+                                        Repository</a></span>
                             </div>
                         </div>
                         <div class="card sticky-action">
                             <div class="card-image">
-                                <img src="assets/images/Concertimg1.jpg">
+                                <img src="assets/images/crystalgameportfolioimage.jpeg">
                             </div>
                             <div class="card-content">
                                 <span class="card-title"> Crystal Collector Game</span>
@@ -253,11 +288,18 @@
                                         class="material-icons right">more_vert</i></span>
                             </div>
                             <div class="card-action">
-                                <a href=""> View Project </a>
+                                <a href="https://niviamanjee.github.io/Crystal-Collector/" target="_blank"> View Project
+                                </a>
                             </div>
                             <div class="card-reveal">
                                 <span class="card-title grey-text text-darken-4">Crystal Collector Game<i
                                         class="material-icons right">close</i></span>
+                                <span class="project-description"> This is a
+                                </span>
+                                <br><br>
+                                <span class="links-to-GH"><i class="fab fa-github"></i><a
+                                        href="https://github.com/niviamanjee/Crystal-Collector" target="_blank">Github
+                                        Repository</a></span>
                             </div>
                         </div>
 
@@ -269,7 +311,7 @@
         </div>
     </div>
     </div>
-    <footer class="page-footer indigo">
+    <footer class="page-footer deep-purple darken-4">
         <div class="container">
             <div class="row">
                 <!-- <div class="col l6 s12">
