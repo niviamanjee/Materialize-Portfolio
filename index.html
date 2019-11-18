@@ -33,7 +33,7 @@
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="#about-me"> About Me</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="html-pages/contact.html">Contact Me</a></li>
+                    <li><a class="email-me">Contact Me</a></li>
                 </ul>
             </div>
             <!--SideNav-->
@@ -53,7 +53,7 @@
                         nivedita.amanjee@gmail.com</span></a>
             </div>
         </li>
-        <li><a href="index.html#about-me"><i class="material-icons">web</i>Projects</a></li>
+        <li><a href="index.html#about-me"><i class="material-icons">face</i>About Me</a></li>
         <li><a href="index.html#projects"><i class="material-icons">web</i>Projects</a></li>
         <li><a href="html-pages/contact.html"><i class="material-icons">contacts</i>Contact Me</a></li>
     </ul>
@@ -61,41 +61,37 @@
     <div id="content">
         <!--full page jumbotron with picture and contact github/linkedin accounts-->
         <header>
-            <div class="overlay"></div>
-            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-                <source src="assets/images/typing.mp4" type="video/mp4">
-            </video>
-            <div class="container card h-100" id="contact-card">
-                <div class="card-body d-flex h-100 text-center align-items-center">
-                    <div class="w-100 text-white">
-                        <img class="circle" src="assets/images/IMG_6596.jpg" style="height:20vh; width: 15vw">
-                        <h1 class="display-4">Nivedita Amanjee</h1>
-                        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space
-                            of
-                            its
-                            parent.</p>
+
+            <div class="jumbotron" style=" height: 100vh">
+
+                <div class="card" id="contact-card">
+
+
+                    <div class="card-body">
+
+                        <div class="container heading-box" style="text-align: center">
+                            <img class="img-thumbnail rounded-circle" src="assets/images/IMG_6596.jpg"
+                                style="height:20vh; width: 15vw">
+                            <h1 class="display-4">Nivedita Amanjee</h1>
+                            <p class="lead"> Web Developer and Aspiring Entrepreneur</p>
+                            <ul>
+                                <li><i class="fab fa-github"></i><a href="https://github.com/niviamanjee"
+                                        target="_blank">Github</a>
+                                </li>
+                                <li><i class="fab fa-linkedin"></i><a
+                                        href="https://www.linkedin.com/in/nivedita-amanjee-5b9476169/" target="_blank">
+                                        Linkedin </a></li>
+                                <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/niviamanjee/"
+                                        target="_blank"> Instagram </a></li>
+                                <li><i class="fas fa-envelope-square"></i><a href="html-pages/contact.html"> Email
+                                        Me</a></li>
+                            </ul>
+                        </div>
                     </div>
+
+
                 </div>
             </div>
-            <!-- <div class="jumbotron" id="video-container" style=" height: 100vh"> -->
-            <!-- <div class="overlay"></div>
-            <video id="main-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-                <source src="assets/images/sftimelapse.mp4" type="video/mp4">
-            </video>
-            <div class="card" id="contact-card">
-                <div class="card-body">
-
-                    <div class="container">
-                        <img class="circle" src="assets/images/IMG_6596.jpg" style="height:20vh; width: 15vw">
-                        <h1 class="display-4">Nivedita Amanjee</h1>
-                        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space
-                            of
-                            its
-                            parent.</p>
-                    </div>
-                </div>
-            </div> -->
-            <!-- </div> -->
         </header>
 
         <div class="section white scrollspy text-box" id="about-me" style="padding-top: 3rem;
@@ -172,94 +168,105 @@
         padding-bottom: 5rem" id="projects">
             <div class="row container">
                 <h4 data-aos="fade-right"> My Projects </h4>
-                <div class="carousel">
-
-                    <div class="carousel-item">
+                <div id="card-row" class="row">
+                    <div id="card-row-container" class="col s12 m4 d-flex justify-content-between">
                         <div class="card sticky-action">
-
-
-                            <div class="card-image ">
-
-                                <img
-                                    src="https://images.pexels.com/photos/160933/girl-rabbit-friendship-love-160933.jpeg?h=350&auto=compress&cs=tinysrgb">
-                                </img>
-
-                                <span class="card-title">Card Title</span>
-                                <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                        class="material-icons md1"></i></a>
+                            <div class="card-image">
+                                <img src="assets/images/Concertimg1.jpg">
                             </div>
                             <div class="card-content">
-                                <p>I am a very simple card.</p>
+                                <span class="card-title"> Trivia Game</span>
+                                <span class="card-title activator grey-text text-darken-4"><i
+                                        class="material-icons right">more_vert</i></span>
                             </div>
                             <div class="card-action">
-                                <a href="#">This is a link</a>
+                                <a href=""> View Project </a>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">New Girl Trivia Game<i
+                                        class="material-icons right">close</i></span>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="card">
+                        <div class="card sticky-action">
                             <div class="card-image">
-                                <img
-                                    src="https://images.pexels.com/photos/160933/girl-rabbit-friendship-love-160933.jpeg?h=350&auto=compress&cs=tinysrgb">
-                                <span class="card-title">
-                                    This is a Title
-                                </span>
+                                <img src="assets/images/Concertimg1.jpg">
                             </div>
-
-                            <span class="card-content">
-                                This is a content
-                            </span>
+                            <div class="card-content">
+                                <span class="card-title"> Giftastic</span>
+                                <span class="card-title activator grey-text text-darken-4"><i
+                                        class="material-icons right">more_vert</i></span>
+                                <span id="Location"></span>
+                                <span id="date"></span>
+                            </div>
                             <div class="card-action">
-                                <a href="#">This is a link</a>
+                                <a href="#"> View Project </a>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Giftastic: Cartoon Gif Search<i
+                                        class="material-icons right">close</i></span>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="card">
+                        <div class="card sticky-action">
                             <div class="card-image">
-                                <img
-                                    src="https://images.pexels.com/photos/160699/girl-dandelion-yellow-flowers-160699.jpeg?h=350&auto=compress&cs=tinysrgb">
-
-                                <span class="card-title">
-                                    This is a Title
-                                </span>
+                                <img src="assets/images/Concertimg1.jpg">
                             </div>
-
-                            <span class="card-content">
-                                This is a content
-                            </span>
+                            <div class="card-content">
+                                <span class="card-title"> Music Hack</span>
+                                <span class="card-title activator grey-text text-darken-4"><i
+                                        class="material-icons right">more_vert</i></span>
+                            </div>
                             <div class="card-action">
-                                <a href="#">This is a link</a>
+                                <a href=""> View Project </a>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Music Hack: Concert Search App<i
+                                        class="material-icons right">close</i></span>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="card">
+                        <div class="card sticky-action">
                             <div class="card-image">
-                                <img
-                                    src="https://images.pexels.com/photos/573299/pexels-photo-573299.jpeg?h=350&auto=compress&cs=tinysrgb">
-                                <span class="card-title">
-                                    This is a Title
-                                </span>
+                                <img src="assets/images/Concertimg1.jpg">
                             </div>
-                            <span class="card-content">
-                                This is a content
-                            </span>
+                            <div class="card-content">
+                                <span class="card-title"> Word Guess Game</span>
+                                <span class="card-title activator grey-text text-darken-4"><i
+                                        class="material-icons right">more_vert</i></span>
+                                <span id="Location"></span>
+                                <span id="date"></span>
+                            </div>
                             <div class="card-action">
-                                <a href="#">This is a link</a>
+
+                                <a href="#"> View Project </a>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Horror Movie Guess Game<i
+                                        class="material-icons right">close</i></span>
                             </div>
                         </div>
+                        <div class="card sticky-action">
+                            <div class="card-image">
+                                <img src="assets/images/Concertimg1.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title"> Crystal Collector Game</span>
+                                <span class="card-title activator grey-text text-darken-4"><i
+                                        class="material-icons right">more_vert</i></span>
+                            </div>
+                            <div class="card-action">
+                                <a href=""> View Project </a>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Crystal Collector Game<i
+                                        class="material-icons right">close</i></span>
+                            </div>
+                        </div>
+
                     </div>
+
 
                 </div>
-
-
             </div>
         </div>
-    </div>
     </div>
     </div>
     <footer class="page-footer indigo">
