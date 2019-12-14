@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
         integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
@@ -29,7 +30,7 @@
     <div class="navbar-fixed">
 
         <!--Navbar-->
-        <nav class="deep-purple darken-4">
+        <nav style="background-color: #161C40;">
             <div class="nav-wrapper">
                 <a href="#home" class="brand-logo center">Nivi Amanjee</a>
                 <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -68,15 +69,18 @@
             <div class="jumbotron" style=" height: 100vh">
 
 
-                <div class="card" id="contact-card">
+                <div class="row">
+                    <div class="col" id="contact-card">
 
-
-                    <div class="card-body">
+                        <!-- <div class="card-body"> -->
 
                         <div class="container heading-box" style="text-align: center">
+
+
+
                             <img class="img-thumbnail rounded-circle" src="assets/images/IMG_6596.jpg"
                                 style="height:20vh; width: 15vw">
-                            <h1 class="display-4">Nivedita Amanjee</h1>
+                            <h1 class="display-4" id="name">Nivedita Amanjee</h1>
                             <p class="lead"> Web Developer and Aspiring Entrepreneur</p>
                             <ul>
                                 <li><i class="fab fa-github"></i><a href="https://github.com/niviamanjee"
@@ -86,16 +90,20 @@
                                         href="https://www.linkedin.com/in/nivedita-amanjee-5b9476169/" target="_blank">
                                         Linkedin </a></li>
                                 <li><i class="fab fa-instagram"></i><a href="https://www.instagram.com/niviamanjee/"
-                                        target="_blank"> Instagram </a></li>
+                                        target="_blank"> Instagram
+                                    </a></li>
                                 <li><i class="fas fa-envelope-square"></i><a
                                         href="mailto:nivedita.amanjee@gmail.com?Subject=Hello%20Nivi!" target="_top">
                                         Email
                                         Me</a></li>
                             </ul>
+
+
+
                         </div>
+                        <!-- </div> -->
+
                     </div>
-
-
                 </div>
             </div>
         </header>
@@ -103,11 +111,11 @@
         <div class="section white scrollspy text-box" id="about-me" style="padding-top: 3rem;
         padding-bottom: 5rem">
             <div class="row container" data-aos="fade-right" data-aos-duration="4000">
-                <h2 class="header">About Me</h2>
-                <div>
+                <h2 class="header titleFont">About Me</h2>
+                <div id="about-me-text">
 
                     <p>
-                        <h4> Career and Education</h4>
+                        <h4 class="titleFont"> Career and Education</h4>
                     </p>
                     <p class="grey-text text-darken-3 lighten-3">Hello Everyone! Welcome to my website. My name is
                         Nivedita Amanjee, and I go by Nivi.
@@ -124,6 +132,19 @@
                         provide outstanding user experience for the websites I create.
 
                     </p>
+                    <p>
+                        <h4 class="titleFont">Technical Skills</h4>
+                    </p>
+                    <p>
+                        <ul id="skills-list">
+                            <li>HTML & CSS</li>
+                            <li>CSS Frameworks: Bootstrap & Materialize</li>
+                            <li>Javascript</li>
+                            <li>Javascript framework: JQuery</li>
+                            <li> Node.js, Express.js</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </p>
                 </div>
             </div>
         </div>
@@ -131,19 +152,22 @@
         <div class="parallax-container" id="parallax-1">
             <div class="parallax">
                 <img src="assets/images/arccampus.jpg">
-
             </div>
         </div>
 
         <div class=" section white scrollspy text-box" style="padding-top: 3rem;
         padding-bottom: 5rem">
-            <div class="row container" data-aos="fade-left" data-aos-duration="4000">
-                <h4> Hobbies and Interests</h4>
-                <p class="grey-text text-darken-3 lighten-3"> </p>
+            <div class="row container" id="hobbies-text" data-aos="fade-left" data-aos-duration="4000">
+                <h4 class="titleFont"> Hobbies and Interests</h4>
                 <p class="grey-text text-darken-3 lighten-3"> In my free time, I enjoy writing, painting, singing, and
                     inventing new business and application ideas. I love watching comedy shows and spending time with my
-                    friends. I try to keep myself active and in shape by running and hitting the gym. Let's hope life as
-                    a programmer doesn't make me age three times as fast! </p>
+                    friends. I try to keep myself active and in shape by running and hitting the gym.</p>
+                <p class="grey-text text-darken-3 lighten-3"> In the future, I would like to start my own business where
+                    I can apply all my skills in psychology, business, and technology to create an amazing service to
+                    others. I want my life to serve as an inspiration to others who are trying to find their direction
+                    and passions. I hope through my story, people will realize that changing paths does not reflect a
+                    wavering mind, but a traveler who has more to offer through experience. </p>
+
             </div>
         </div>
         <!--second parallax container-->
@@ -155,7 +179,7 @@
         <div class="section scrollspy text-box" style="padding-top: 3rem;
         padding-bottom: 5rem" id="projects">
             <div class="row container">
-                <h4 data-aos="fade-right" data-aos-duration="4000"> My Projects </h4>
+                <h4 class="titleFont" data-aos="fade-right" data-aos-duration="4000"> My Projects </h4>
                 <div id="card-row" class="row" data-aos="fade-in" data-aos-duration="3000">
                     <div id="card-row-container" class="col s12 m4 d-flex justify-content-between">
                         <div class="card sticky-action">
@@ -298,7 +322,7 @@
         </div>
     </div>
     </div>
-    <footer class="page-footer deep-purple darken-4">
+    <footer class="page-footer" style="background-color:#161C40;">
         <div class="container">
             <div class="row">
                 <!-- <div class="col l6 s12">

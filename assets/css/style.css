@@ -1,16 +1,21 @@
 
 .heading-box img {
-  height: 30vh;
-  width: 25vw;
+  height: 40vh;
+  width: 35vw;
   border: 3px black solid;
  
 }
-.jumbotron {
-  background-image: url("../images/circle-blues.png");
-	background-size: cover;
-	background-repeat: no-repeat;
+.heading-box a {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
+.jumbotron {
+  background-image: linear-gradient(to bottom right, #4D508C, #F2F0CE);
+}
+#name {
+  font-family: 'Playfair Display SC', serif;
+  font-weight: bold;
+}
 
 .text-box {
     padding-top: 5vh;
@@ -40,9 +45,7 @@
   flex-shrink: 0;
 }
 
-/* .card > img {
-  margin-bottom: .75rem;
-} */
+
 
 .card-text {
 font-size: 85%;
@@ -52,3 +55,25 @@ font-size: 85%;
   height: 470px;
 }
 
+#about-me h2 {
+  font-family: 'Playfair Display SC', serif;
+}
+
+#about-me-text p {
+  font-size: 120%;
+}
+
+.titleFont {
+  font-family: 'Playfair Display SC', serif;
+}
+
+
+#hobbies-text, #about-me-text p {
+  font-size: 120%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#skills-list {
+  font-size: 120%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
